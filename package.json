@@ -1,11 +1,22 @@
 {
-  "name"          : "node-mygengo",
-  "description"   : "Library for interacting with the myGengo API.",
+  "name"          : "gengo",
+  "description"   : "Library for interacting with the gengo API.",
   "version"       : "0.0.1",
   "author"        : "Mike Holly",
   "homepage"      : "http://github.com/mikejholly/node-mygengo",
   "repository"    : {"type" : "git", "url" : "http://github.com/mikejholly/node-mygengo.git"},
-  "dependencies"  : [],
-  "main"          : "./lib/mygengo",
-  "keywords"      : ["i18n", "l10n"]
+  "dependencies"  : {
+  	"request": "2.16.2",
+  	"crypto": "0.0.3",
+  	"underscore": "1.4.4",
+  	"assert": "0.4.9"
+  	},
+  "main"          : "./lib/gengo",
+  "keywords"      : ["i18n", "l10n"],
+  "engine": [
+    "node >= 0.3.6"
+  ],
+  "scripts": {
+    "test": "node tests/run.js"
+  }
 }

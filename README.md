@@ -1,2 +1,2 @@
-Full featured API for myGengo translation service.
+Full featured API for gengo translation service.
     
