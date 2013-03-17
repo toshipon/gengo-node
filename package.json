@@ -8,8 +8,12 @@
   "dependencies"  : {
   	"request": "2.16.2",
   	"crypto": "0.0.3",
-  	"underscore": "1.4.4",
-  	"assert": "0.4.9"
+  	"underscore": "1.4.4"
+  	},
+  "devDependencies": {
+  	"mocha": "*",
+  	"should": "*",
+  	"spec": "*"
   	},
   "main"          : "./lib/gengo",
   "keywords"      : ["i18n", "l10n"],
@@ -17,6 +21,6 @@
     "node >= 0.3.6"
   ],
   "scripts": {
-    "test": "node tests/run.js"
+    "test": "mocha"
   }
 }
